@@ -1,0 +1,119 @@
+*{
+    /* font-family: "Tilt Neon", sans-serif; */
+    font-family: "Fjalla One", sans-serif;
+    box-sizing: border-box;
+    /* font-weight: bold; */
+}
+body{
+    background: url('./assets/abstract-92-background-wallpaper-gradient_792836-184027.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav{
+    background-color: transparent !important;
+    position: fixed !important;
+}
+.logo_nav{
+    width: 70px;
+}
+.about-content{
+    color: #B8CFCE ;
+}
+.about-content span{
+    font-family: "Vina Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: #7F8CAA;
+    font-size: 3rem;
+}
+
+    .pic{
+        background: url(./assets/whitelight-gray-gradient-background_763013-98.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 300px;
+        height: 350px;
+        position: relative;
+        border-radius: 4%;
+        /* overflow: hidden; */
+        /* transition: 0.5s; */
+        animation: shrinkBg 0.8s ease forwards;
+        /* top: 50px; */
+    }
+
+    @keyframes shrinkBg{
+    0%{
+        width: 300px;
+        height: 350px;
+    }
+    100%{
+        width:350px;
+        height: 300px;
+        box-shadow: 0px 0px 15px white;
+    }
+}
+    .images{
+
+        position: absolute;
+        /* left: 0; */
+        bottom: 0;
+        padding: 0px 15px;
+        width: 300px;
+        animation: growImage 0.8s ease forwards;
+        /* transition: filter 0.5s; */
+    }
+
+    @keyframes growImage{
+    0%{
+        width: 300px;
+    }
+    100%{
+        width:350px;
+        filter: drop-shadow(6px 0px 20px black);
+    }
+}
+
+
+.resume {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: #7F8CAA;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.resume:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+    color: white;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px black;
+}
+
+#about h3{
+    font-family: "Vina Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: #7F8CAA;
+    font-size: 2rem;
+    text-align: center;
+}
+#about{
+    text-align: justify;
+    /* margin: 7px; */
+    animation: animateBorder 4.0s ease forwards;
+}
+@keyframes animateBorder {
+    0%{
+        border: 0px;
+        opacity: 0;
+    }
+    100%{
+        border: 1px solid white;
+        opacity: 1;
+        background-color: rgb(133, 133, 133, 0.2);
+    }
+}
