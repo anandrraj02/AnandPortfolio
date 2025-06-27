@@ -11,8 +11,15 @@ body{
     background-attachment: fixed;
 }
 nav{
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     position: fixed !important;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(154, 147, 185, 0.2) !important;
+    backdrop-filter: blur(10px);
+    /* margin: 2px 5px; */
+    /* border-radius: 5px; */
+    box-shadow: 0px 2px 50px black;
 }
 .logo_nav{
     width: 70px;
@@ -104,16 +111,7 @@ nav{
 #about{
     text-align: justify;
     /* margin: 7px; */
-    animation: animateBorder 4.0s ease forwards;
-}
-@keyframes animateBorder {
-    0%{
-        border: 0px;
-        opacity: 0;
-    }
-    100%{
-        border: 1px solid white;
-        opacity: 1;
-        background-color: rgb(133, 133, 133, 0.2);
-    }
+    background-color: rgb(154, 147, 185, 0.2) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
