@@ -3,12 +3,14 @@
     font-family: "Fjalla One", sans-serif;
     box-sizing: border-box;
     /* font-weight: bold; */
+    color: #B8CFCE;
 }
 body{
     background: url('./assets/abstract-92-background-wallpaper-gradient_792836-184027.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    
 }
 nav{
     /* background-color: transparent !important; */
@@ -77,7 +79,7 @@ nav{
     }
     100%{
         width:350px;
-        filter: drop-shadow(6px 0px 20px black);
+        filter: drop-shadow(8px 0px 25px black);
     }
 }
 
@@ -100,7 +102,7 @@ nav{
     box-shadow: 2px 2px 10px black;
 }
 
-#about h3{
+#about h3, #skills h3{
     font-family: "Vina Sans", sans-serif;
     letter-spacing: 1px;
     font-weight: lighter;
@@ -108,10 +110,45 @@ nav{
     font-size: 2rem;
     text-align: center;
 }
-#about{
+#about, #skills{
     text-align: justify;
     /* margin: 7px; */
     background-color: rgb(154, 147, 185, 0.2) !important;
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    text-shadow: 2px 2px 10px black;
 }
+#skills li{
+    padding: 2px;
+    margin: 4px 0px;
+}
+.level{
+    height: 15px;
+    width: 100%;
+    background-color: rgb(103, 101, 115);
+    border-radius: 10px;
+    /* position: relative; */
+    margin: 2px 0px;
+    box-shadow: 2px 2px 10px black;
+    overflow: hidden;
+}
+.cpgm{
+    height: 15px;
+    width: 75%;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    /* position: absolute; */
+    animation: skillC 1.5s ease forwards;
+    animation-delay: 1.5s;
+
+}
+/* @keyframes skillC {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+} */
